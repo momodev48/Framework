@@ -1,0 +1,47 @@
+@import 'components/normalize';
+@import 'utils/variables';
+@import 'utils/mixin';
+@import 'components/type';
+@import 'components/images';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/layout';
+@import 'components/listes';
+@import 'components/formulaire';
+
+body
+{
+    font-family: sans-serif;
+    font-size: &size-text;
+    line-height: 1.5; 
+    //color: $c-txt;
+}
+
+.title {
+    color: $c-alt;
+    font-size: 30px;
+    
+    @include sm {
+        font-size: 40px;
+        color: darkorange;
+    }
+    @include md {
+        font-size: 50px;
+        color: yellow;
+    }
+    @include lg {
+        font-size: 50px;
+        color: pink;
+    }
+    @include xl {
+        font-size: 60px;
+        color: forestgreen;
+    }
+}
+/*
+Modifiers 
+.title
+color: $c-alt;
+&--big{}
+&--small{}
+*/
